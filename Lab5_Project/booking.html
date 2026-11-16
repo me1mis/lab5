@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Author: Munisaxon Yusupaliyeva | CSIT248 Lab Work 5 | Registan Travel -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registan Travel | Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Registan <span>Travel</span></a>
+    <div class="header-right">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="booking.html" class="active">Booking</a>
+      </nav>
+      <a class="btn btn-book" href="booking.html">Book now</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Book your tour</h1>
+
+    <!-- novalidate: we use our own JavaScript validation -->
+    <form id="booking-form" novalidate>
+
+      <label for="name" class="required">Full name</label>
+      <input type="text" id="name" name="name" autocomplete="name">
+      <p class="field-error" id="name-error"></p>
+
+      <label for="email" class="required">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email">
+      <p class="field-error" id="email-error"></p>
+
+      <label for="tour" class="required">Tour</label>
+      <select id="tour" name="tour">
+        <option value="tashkent">Old Tashkent Walk (35 USD)</option>
+        <option value="samarkand">Registan &amp; Gur-e-Amir (120 USD)</option>
+        <option value="khiva">Khiva Itchan Kala (210 USD)</option>
+      </select>
+
+      <label for="travellers" class="required">Number of travellers (1–12)</label>
+      <input type="number" id="travellers" name="travellers" min="1" max="12" value="1">
+      <p class="field-error" id="travellers-error"></p>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+
+      <p id="total"></p>
+
+      <button type="submit" class="btn">Send request</button>
+    </form>
+
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Registan Travel, Tashkent. Groups of 5 or more get 10% off.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

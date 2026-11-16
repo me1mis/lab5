@@ -1,0 +1,90 @@
+/* Author: Munisaxon Yusupaliyeva | CSIT248 Lab Work 5 | Registan Travel */
+/* Brand colours on top of Bootstrap (Part C) */
+:root
+{
+    --night: #0B1F4B;
+    --gold: #E0A526;
+    --sand: #FAF6EE;
+}
+
+body
+{
+    padding-top: 72px;
+    background: var(--sand);
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, .navbar-brand
+{
+    font-family: Georgia, serif;
+}
+
+h1, h2, h3
+{
+    color: var(--night);
+}
+
+.navbar-registan
+{
+    background: var(--night);
+}
+
+.navbar-registan .nav-link
+{
+    color: #fff;
+}
+
+.navbar-registan .nav-link:hover
+{
+    background: var(--gold);
+    color: var(--night);
+}
+
+.navbar-registan .nav-link.active
+{
+    border-bottom: 3px solid var(--gold);
+}
+
+.navbar-registan .brand-span
+{
+    color: var(--gold);
+}
+
+.hero-registan
+{
+    background: linear-gradient(135deg, var(--night), #234a9c);
+}
+
+.hero-registan h1
+{
+    color: #fff;
+}
+
+.btn-registan
+{
+    background: var(--night);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-registan:hover
+{
+    background: var(--gold);
+    color: var(--night);
+}
+
+.badge-gold
+{
+    background: var(--gold);
+    color: var(--night);
+}
+
+.footer-registan
+{
+    background: var(--night);
+}
+
+.hero-text
+{
+    max-width: 560px;
+}
